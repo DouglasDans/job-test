@@ -31,7 +31,13 @@ export async function getAllProdutos(): Promise<Array<Produto>> {
   })
 }
 
-export async function updateProduto(formData: FormData, id: number) {
+export async function getProdutoById(id: number): Promise<Produto | null> {
+  return await prisma.produto.findUnique({
+    where: {id}
+  })
+}
+
+export async function updateProduto(id: number, formData: FormData ) {
   const produto : Produto = {
     nome: formData.get("nome") as string,
     valor: parseFloat(formData.get("valor") as string),
