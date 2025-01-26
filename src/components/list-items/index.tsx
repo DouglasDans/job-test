@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from './index.module.scss'
 
 type Props = {
   items: Array<Produto>
@@ -6,7 +7,11 @@ type Props = {
 
 export default function ListItems({ items }: Props) {
   if (items.length === 0) {
-    return ("Nenhum item foi adicionado")
+    return (
+      <div className={styles.placeholderContainer}>
+        <span>Nenhum item foi adicionado</span>
+      </div>
+    )
   }
 
   return (
