@@ -1,0 +1,20 @@
+@use 'styles/color';
+
+.layout{
+  background-color: color.$body-color;
+  
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  background-color: color.$level1-color;
+  border: 1px solid color.$border-color;
+
+  width: 70%;
+  height: 80%;
+}
