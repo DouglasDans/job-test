@@ -13,6 +13,10 @@
 }
 
 .container{
+  display: flex;
+  flex-direction: column;
+  gap: sizes.$main-container-gap;
+
   background-color: color.$level1-color;
   border-radius: sizes.$main-container-radius;
   border: 1px solid color.$border-color;
