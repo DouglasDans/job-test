@@ -53,8 +53,8 @@ export default function ThemeRegistry(props: any) {
 
   return (
     <CacheProvider value={cache}>
-      <CssVarsProvider>
-        <CssBaseline />
+      <CssVarsProvider colorSchemeSelector='light'>
+        <CssBaseline disableColorScheme />
         {children}
       </CssVarsProvider>
     </CacheProvider>

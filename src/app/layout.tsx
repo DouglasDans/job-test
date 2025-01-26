@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR">
+    <html lang="pt-BR" data-color-scheme="light">
       <body className={`${openSans.variable}`}>
         <ThemeRegistry options={{ key: 'joy' }}>
           <MainLayout>
