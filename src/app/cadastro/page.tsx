@@ -1,14 +1,18 @@
 import { Button, FormControl, FormLabel, Input, Radio, RadioGroup, Textarea } from "@mui/joy"
 import { Fragment } from "react"
 import styles from './page.module.scss'
+import Link from "next/link"
 
 type Props = {}
 
 export default function CadastroPage({ }: Props) {
   return (
     <Fragment>
-      <div>
+      <div className={styles.titleContainer}>
         <h1>Cadastrar Novo Produto</h1>
+        <Link href={"/"}>
+          <Button variant="outlined" color="neutral">Voltar</Button>
+        </Link>
       </div>
 
       <form className={styles.formContainer}>
