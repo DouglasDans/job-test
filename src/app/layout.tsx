@@ -1,4 +1,5 @@
 import MainLayout from "@/layouts/main-layout";
+import ThemeRegistry from "@/libs/joy-ui/theme-registry";
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
 
@@ -22,9 +23,11 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={`${openSans.variable}`}>
-        <MainLayout>
-          {children}
-        </MainLayout>
+        <ThemeRegistry options={{ key: 'joy' }}>
+          <MainLayout>
+            {children}
+          </MainLayout>
+        </ThemeRegistry>
       </body>
     </html >
   );
