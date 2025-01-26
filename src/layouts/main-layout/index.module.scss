@@ -1,4 +1,5 @@
-@use 'styles/color';
+@use '@/styles/color';
+@use '@/styles/sizes';
 
 .layout{
   background-color: color.$body-color;
@@ -13,8 +14,11 @@
 
 .container{
   background-color: color.$level1-color;
+  border-radius: sizes.$main-container-radius;
   border: 1px solid color.$border-color;
 
   width: 70%;
-  height: 80%;
+  min-height: 80%;
+
+  padding: sizes.$main-container-padding;
 }
