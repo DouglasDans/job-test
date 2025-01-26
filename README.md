@@ -21,3 +21,12 @@ Requisito: 𝐂𝐚𝐝𝐚𝐬𝐭𝐫𝐨 𝐞 𝐥𝐢𝐬𝐭𝐚𝐠𝐞�
 
 𝐏𝐨𝐝𝐞 𝐢𝐦𝐩𝐥𝐞𝐦𝐞𝐧𝐭𝐚𝐫 𝐚 𝐩𝐫𝐨𝐯𝐚 𝐚𝐭𝐞́ 𝐨𝐧𝐝𝐞 𝐜𝐨𝐧𝐬𝐞𝐠𝐮𝐢𝐫.
 𝐀 𝐢𝐦𝐩𝐥𝐞𝐦𝐞𝐧𝐭𝐚𝐜̧𝐚̃𝐨 𝐩𝐨𝐝𝐞 𝐬𝐞𝐫 𝐫𝐞𝐚𝐥𝐢𝐳𝐚𝐝𝐚 𝐜𝐨𝐦 𝐪𝐮𝐚𝐥𝐪𝐮𝐞𝐫 𝐥𝐢𝐧𝐠𝐮𝐚𝐠𝐞𝐦 𝐝𝐞 𝐩𝐫𝐨𝐠𝐫𝐚𝐦𝐚𝐜̧𝐚̃𝐨.
+
+
+## Anotações sobre a solução realizada
+- Foi construído um CRUD para a entidade "Produto" com os atributos que foram propostos
+- Utizei NextJS para agilizar a criação da interface de usuário em React e para a manipulação do backend.
+- Utilizei PrismaORM para a persistência dos dados no banco da dados.
+- Utilizei JoyUI para agilizar o desenvolvimento do estilo das páginas web
+- Utilizei PostgreSQL como banco de dados
+
