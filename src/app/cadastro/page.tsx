@@ -24,7 +24,18 @@ export default function CadastroPage({ }: Props) {
 
         <FormControl>
           <FormLabel>Valor</FormLabel>
-          <Input placeholder="Digite o Valor do Produto" type="number" name="valor" required />
+          <Input
+            placeholder="Digite o Valor do Produto"
+            slotProps={{
+              input: {
+                type: 'number',
+                min: 0,
+                step: '.01',
+              },
+            }}
+            name="valor"
+            required
+          />
         </FormControl>
 
         <FormControl>

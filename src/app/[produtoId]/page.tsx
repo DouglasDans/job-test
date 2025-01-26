@@ -45,7 +45,19 @@ export default async function EditarPage({ params }: Props) {
 
         <FormControl>
           <FormLabel>Valor</FormLabel>
-          <Input placeholder="Digite o Valor do Produto" type="number" name="valor" required defaultValue={produto.valor} />
+          <Input
+            placeholder="Digite o Valor do Produto"
+            slotProps={{
+              input: {
+                type: 'number',
+                min: 0,
+                step: '.01',
+              },
+            }}
+            name="valor"
+            defaultValue={produto.valor}
+            required
+          />
         </FormControl>
 
         <FormControl>
