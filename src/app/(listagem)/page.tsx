@@ -3,12 +3,8 @@ import styles from './page.module.scss'
 import { Fragment } from 'react'
 import ListItems from '@/components/list-items'
 import Link from 'next/link'
-import { getAllProdutos } from '@/actions/produto.action'
 
-type Props = {}
-
-export default async function ListagemPage({ }: Props) {
-  const items: Array<Produto> = await getAllProdutos()
+export default async function ListagemPage() {
   return (
     <Fragment>
       <div className={styles.titleContainer}>
@@ -17,7 +13,7 @@ export default async function ListagemPage({ }: Props) {
           <Button>Adicionar Produtos</Button>
         </Link>
       </div>
-      <ListItems items={items} />
+      <ListItems />
     </Fragment>
   )
 }
