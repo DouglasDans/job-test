@@ -3,11 +3,12 @@ import styles from './page.module.scss'
 import { Fragment } from 'react'
 import ListItems from '@/components/list-items'
 import Link from 'next/link'
+import { getAllProdutos } from '@/actions/produto.action'
 
 type Props = {}
 
-export default function ListagemPage({ }: Props) {
-  const items: Array<Produto> = []
+export default async function ListagemPage({ }: Props) {
+  const items: Array<Produto> = await getAllProdutos()
   return (
     <Fragment>
       <div className={styles.titleContainer}>
