@@ -3,7 +3,7 @@ import ThemeRegistry from "@/libs/joy-ui/theme-registry";
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
 
-import 'styles/global.scss'
+import '@/styles/global.scss'
 
 const openSans = Open_Sans({
   variable: "--font-open-sans",
